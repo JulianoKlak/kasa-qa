@@ -29,9 +29,9 @@ Garantir a qualidade e a estabilidade das funcionalidades mais críticas da apli
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Robot Framework** 7.x
+- **Robot Framework** 7.0.1 (Python 3.12.4 on win32)
 - **SeleniumLibrary**
-- **Python 3**
+- **Python 3.12.4**
 - **Google Chrome** (execução em modo headless)
 - Gerenciamento de dependências via `requirements.txt`
 
