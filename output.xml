@@ -1,0 +1,2789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2026-02-01T00:06:47.345312" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Juliano\www\kasa-qa\tests">
+<suite id="s1-s1" name="Favorites" source="C:\Users\Juliano\www\kasa-qa\tests\favorites">
+<suite id="s1-s1-s1" name="Favoritos Tests" source="C:\Users\Juliano\www\kasa-qa\tests\favorites\favoritos_tests.robot">
+<test id="s1-s1-s1-t1" name="Cenário: Favoritar um time com sucesso" line="11">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:47.705077" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:06:47.705077" elapsed="2.741004"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:06:50.447088" elapsed="0.079545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:50.526633" elapsed="0.406004"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:47.703752" elapsed="3.228885"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:56.170703" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:06:56.171700" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:06:50.935637" elapsed="5.239064">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:06:56.174701" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:06:56.174701" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:06:56.175701" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:06:50.934638" elapsed="5.241063">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:06:50.934638" elapsed="5.241063"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.176699" elapsed="0.034002"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:50.934638" elapsed="5.277063"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.212700" elapsed="0.022998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:56.236727" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.236727" elapsed="0.225976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.463701" elapsed="0.258224"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:56.211701" elapsed="0.510224"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.722931" elapsed="0.022610"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:56.746542" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.745541" elapsed="0.253308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:56.999847" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:06:56.998849" elapsed="0.186711"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:06:56.722931" elapsed="0.462629"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:57.186561" elapsed="0.023998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:06:57.210559" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:06:57.210559" elapsed="0.173957"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:57.185560" elapsed="0.198956"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:56.721925" elapsed="0.662591"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:06:57.386505" elapsed="3.313839"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:57.385503" elapsed="3.314841"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:57.384516" elapsed="3.315828"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:06:50.933635" elapsed="9.766709"/>
+</kw>
+<kw name="Navegar Para Aba Favoritos" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ABA_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:00.702342" elapsed="0.182344"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:00.885683" level="INFO">Clicking element 'xpath=//p[normalize-space()='Favoritos']'.</msg>
+<arg>${ABA_FAVORITOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:00.884686" elapsed="0.172042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_PARTIDAS_FAVORITAS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:01.056728" elapsed="2.937485"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_TIMES_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:03.994213" elapsed="0.042999"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:00.701343" elapsed="3.335869"/>
+</kw>
+<kw name="Abrir Modal De Favoritar Time" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:04.040216" elapsed="0.068995"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-02-01T00:07:04.109211" elapsed="0.170535"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:04.280745" level="INFO">Clicking element 'css=button[data-cy='btn-favorite-team']'.</msg>
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:04.279746" elapsed="0.198365"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${INPUT_PESQUISAR_TIME}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:04.479137" elapsed="0.108501"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:04.039233" elapsed="0.548405"/>
+</kw>
+<kw name="Adicionar Primeiro Time Da Lista" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:19.817365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:07:19.818368" level="FAIL">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</msg>
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:07:04.589636" elapsed="15.228732">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:19.818368" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:19.818368" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:04.589636" elapsed="15.229953">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Concluir Seleção De Times Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:19.819589" elapsed="0.001005"/>
+</kw>
+<kw name="Validar Que Existe Pelo Menos Um Time Favorito" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:19.821596" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:07:19.822592" elapsed="2.311295"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:19.822592" elapsed="2.311295"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:06:47.702750" elapsed="34.431137">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Cenário: Não deve duplicar time já favoritado" line="19">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:22.137890" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:07:22.137890" elapsed="2.941733"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:07:25.079623" elapsed="0.053733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:25.133721" elapsed="0.566711"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:22.136889" elapsed="3.563543"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:30.857888" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:07:30.858114" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:07:25.707678" elapsed="5.151436">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:30.860116" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:30.860116" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:30.860116" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:25.705654" elapsed="5.155462">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:07:25.704428" elapsed="5.156688"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:30.863195" elapsed="0.033922"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:25.704428" elapsed="5.194009"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:30.899437" elapsed="0.018954"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:30.919392" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:30.919392" elapsed="0.200805"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.120197" elapsed="0.034022"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:30.898437" elapsed="0.255782"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.156222" elapsed="0.034444"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:31.192670" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.191665" elapsed="0.290743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:31.483396" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.483396" elapsed="0.187970"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:07:31.155219" elapsed="0.516147"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.672366" elapsed="0.036999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:31.710368" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.709365" elapsed="0.227447"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:31.672366" elapsed="0.264446"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:31.155219" elapsed="0.781593"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:31.938811" elapsed="2.329152"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:31.937810" elapsed="2.331155"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:31.936812" elapsed="2.332153"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:25.702450" elapsed="8.566515"/>
+</kw>
+<kw name="Navegar Para Aba Favoritos" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ABA_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:34.270963" elapsed="0.042298"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:34.314261" level="INFO">Clicking element 'xpath=//p[normalize-space()='Favoritos']'.</msg>
+<arg>${ABA_FAVORITOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:34.314261" elapsed="0.270398"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_PARTIDAS_FAVORITAS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:34.585684" elapsed="2.893759"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_TIMES_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:37.479443" elapsed="0.238579"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:34.269966" elapsed="3.448056"/>
+</kw>
+<kw name="Abrir Modal De Favoritar Time" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:37.721019" elapsed="0.045960"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-02-01T00:07:37.767981" elapsed="0.051375"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:37.819356" level="INFO">Clicking element 'css=button[data-cy='btn-favorite-team']'.</msg>
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:07:37.819356" elapsed="0.164824"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${INPUT_PESQUISAR_TIME}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:37.985178" elapsed="0.038680"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:37.719022" elapsed="0.304836"/>
+</kw>
+<kw name="Adicionar Primeiro Time Da Lista" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:53.262242" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:07:53.262833" level="FAIL">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</msg>
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:07:38.024859" elapsed="15.238652">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:53.264058" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:07:53.264568" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:38.024859" elapsed="15.239709">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Concluir Seleção De Times Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:53.266368" elapsed="0.000035"/>
+</kw>
+<kw name="Abrir Modal De Favoritar Time" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:53.267026" elapsed="0.000000"/>
+</kw>
+<kw name="Adicionar Primeiro Time Da Lista" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:53.268082" elapsed="0.000095"/>
+</kw>
+<kw name="Concluir Seleção De Times Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:53.268715" elapsed="0.000000"/>
+</kw>
+<kw name="Validar Que Existe Pelo Menos Um Time Favorito" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:07:53.269786" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:07:53.271630" elapsed="2.297923"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:53.270314" elapsed="2.299239"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:22.136889" elapsed="33.434665">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Cenário: Desmarcar um time dos favoritos" line="32">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:07:55.577537" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:07:55.577537" elapsed="3.248294"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:07:58.825831" elapsed="0.092346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:07:58.919150" elapsed="0.302090"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:55.576536" elapsed="3.644704"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:04.438814" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:08:04.438814" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:07:59.221240" elapsed="5.218574">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:04.440814" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:04.440814" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:04.440814" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:59.221240" elapsed="5.219574">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:07:59.221240" elapsed="5.220576"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.441816" elapsed="0.028998"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:59.221240" elapsed="5.249574"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.471813" elapsed="0.020589"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:04.493475" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.492938" elapsed="0.190172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.683110" elapsed="0.090206"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:04.470814" elapsed="0.303279"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.783416" elapsed="0.054162"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:04.838585" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:04.838585" elapsed="0.247750"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:05.087331" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:05.086335" elapsed="0.213941"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:08:04.775442" elapsed="0.524834"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:05.302278" elapsed="0.024000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:05.328282" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:05.328282" elapsed="0.208146"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:05.301278" elapsed="0.235371"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:04.774415" elapsed="0.762234"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:05.538649" elapsed="2.249424"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:05.537650" elapsed="2.250423"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:05.536649" elapsed="2.251424"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:07:59.221240" elapsed="8.566833"/>
+</kw>
+<kw name="Navegar Para Aba Favoritos" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ABA_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:07.792271" elapsed="0.044995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:07.838269" level="INFO">Clicking element 'xpath=//p[normalize-space()='Favoritos']'.</msg>
+<arg>${ABA_FAVORITOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:07.838269" elapsed="0.114994"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_PARTIDAS_FAVORITAS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:07.953263" elapsed="2.073418"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_TIMES_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:10.026681" elapsed="0.043118"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:07.791273" elapsed="2.279528"/>
+</kw>
+<kw name="Abrir Modal De Favoritar Time" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:10.075390" elapsed="0.076659"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-02-01T00:08:10.153048" elapsed="0.089428"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:10.243483" level="INFO">Clicking element 'css=button[data-cy='btn-favorite-team']'.</msg>
+<arg>${BTN_ABRIR_MODAL_FAVORITAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:10.242476" elapsed="0.353913"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${INPUT_PESQUISAR_TIME}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:10.597385" elapsed="0.066881"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:10.073360" elapsed="0.590906"/>
+</kw>
+<kw name="Adicionar Primeiro Time Da Lista" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:25.784563" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:08:25.784563" level="FAIL">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</msg>
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:08:10.668265" elapsed="15.117300">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:25.785565" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BTN_ADD_PRIMEIRO_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:25.785565" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:08:10.667264" elapsed="15.118301">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</kw>
+<kw name="Concluir Seleção De Times Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:25.786564" elapsed="0.000000"/>
+</kw>
+<kw name="Editar Times Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:25.786564" elapsed="0.001000"/>
+</kw>
+<kw name="Desmarcar Primeiro Time Favorito" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:25.787564" elapsed="0.000000"/>
+</kw>
+<kw name="Salvar Alteracoes De Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:25.787564" elapsed="0.000000"/>
+</kw>
+<kw name="Navegar Para Aba Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:25.788563" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:08:25.789564" elapsed="2.301587"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:25.789564" elapsed="2.301587"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:07:55.576536" elapsed="32.515615">Element 'xpath=(//button[normalize-space()='Add'])[1]' not visible after 15 seconds.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Cenário: Favoritar um canal de TV" line="47">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:28.095152" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:08:28.095152" elapsed="1.528505"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:08:29.623657" elapsed="2.313798"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:31.937455" elapsed="0.391341"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:28.095152" elapsed="4.234644"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:37.482939" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:08:37.482939" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:08:32.333794" elapsed="5.150150">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:37.483944" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:37.483944" elapsed="0.000999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:37.484943" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:08:32.332792" elapsed="5.152151">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:08:32.331792" elapsed="5.153151"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.484943" elapsed="0.022407"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:32.331792" elapsed="5.175558"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.507350" elapsed="0.016001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:37.523351" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.523351" elapsed="0.175286"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.698637" elapsed="0.258750"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:37.507350" elapsed="0.451041"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.959388" elapsed="0.025003"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:37.985395" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:37.985395" elapsed="0.207348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:38.193743" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:38.193743" elapsed="0.177470"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:08:37.958391" elapsed="0.412822"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:38.372209" elapsed="0.025002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:38.398217" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:38.398217" elapsed="0.205569"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:38.371213" elapsed="0.233574"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:37.958391" elapsed="0.646396"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:38.606258" elapsed="2.151567"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:38.605911" elapsed="2.151914"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:38.604787" elapsed="2.153038"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:32.330796" elapsed="8.428028"/>
+</kw>
+<kw name="Navegar Para Aba Favoritos" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ABA_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:40.759825" elapsed="0.026944"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:40.787767" level="INFO">Clicking element 'xpath=//p[normalize-space()='Favoritos']'.</msg>
+<arg>${ABA_FAVORITOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:08:40.787767" elapsed="0.114604"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_PARTIDAS_FAVORITAS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:40.903373" elapsed="2.016020"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_TIMES_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:42.919393" elapsed="0.053090"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:40.759825" elapsed="2.212658"/>
+</kw>
+<kw name="Validar Que Area De Canais Favoritos Esta Visivel" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TITULO_CANAIS_FAVORITOS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:08:42.975482" elapsed="0.035999"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:42.974493" elapsed="0.036988"/>
+</kw>
+<kw name="Abrir Modal De Favoritar Canal" owner="favorites_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:08:58.181622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:08:58.181622" level="FAIL">Element 'xpath://button[normalize-space()='Favoritar']' not visible after 15 seconds.</msg>
+<arg>${BTN_FAVORITAR_CANAL}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:08:43.013483" elapsed="15.169141">Element 'xpath://button[normalize-space()='Favoritar']' not visible after 15 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BTN_FAVORITAR_CANAL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:58.182624" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>300ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-01T00:08:58.182624" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:08:43.012482" elapsed="15.170142">Element 'xpath://button[normalize-space()='Favoritar']' not visible after 15 seconds.</status>
+</kw>
+<kw name="Adicionar Primeiro Canal Da Lista" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:58.183622" elapsed="0.000000"/>
+</kw>
+<kw name="Concluir Seleção De Canais Favoritos" owner="favorites_keywords">
+<status status="NOT RUN" start="2026-02-01T00:08:58.184625" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:08:58.185623" elapsed="2.299581"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:08:58.184625" elapsed="2.300579"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:08:28.094151" elapsed="32.391053">Element 'xpath://button[normalize-space()='Favoritar']' not visible after 15 seconds.</status>
+</test>
+<status status="FAIL" start="2026-02-01T00:06:47.392859" elapsed="133.097351"/>
+</suite>
+<status status="FAIL" start="2026-02-01T00:06:47.390860" elapsed="133.101351"/>
+</suite>
+<suite id="s1-s2" name="Login" source="C:\Users\Juliano\www\kasa-qa\tests\login">
+<suite id="s1-s2-s1" name="Login Tests" source="C:\Users\Juliano\www\kasa-qa\tests\login\login_tests.robot">
+<test id="s1-s2-s1-t1" name="Cenário: Login com sucesso" line="10">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:00.509372" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:00.509372" elapsed="3.057702"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:09:03.567074" elapsed="0.028403"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:03.595477" elapsed="0.429502"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:00.509372" elapsed="3.515607"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.026977" elapsed="0.147538"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:04.174515" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.174515" elapsed="0.314615"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.490132" elapsed="0.051251"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:04.025979" elapsed="0.515404"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.545736" elapsed="0.020975"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:04.566711" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.566711" elapsed="0.240587"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:04.808297" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:04.807298" elapsed="0.212217"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:09:04.544738" elapsed="0.474777"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:05.023413" elapsed="0.033001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:05.057430" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:05.056414" elapsed="0.253964"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:05.021420" elapsed="0.288958"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:04.543394" elapsed="0.766984"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:05.316529" elapsed="2.312828"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:05.315379" elapsed="2.313978"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:05.314382" elapsed="2.314975"/>
+</kw>
+<kw name="Quando faço logoff" owner="login_keywords">
+<kw name="Abrir Menu Perfil" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:07.633359" elapsed="0.094392"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:07.728749" level="INFO">Clicking element 'css:button[title='Geromel']'.</msg>
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:07.728749" elapsed="0.217018"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:07.632356" elapsed="0.313411"/>
+</kw>
+<kw name="Clicar Em Sair" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:07.946768" elapsed="0.787807"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:08.735427" level="INFO">Clicking element 'css:button.chakra-button.css-8vvqyi'.</msg>
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:08.735427" elapsed="0.171904"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:07.946768" elapsed="0.960563"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:07.631356" elapsed="1.275975"/>
+</kw>
+<kw name="Então devo ver a opção de entrar novamente" owner="login_keywords">
+<kw name="Devo Estar Deslogado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:08.910329" elapsed="0.109303"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:08.909330" elapsed="0.110302"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:08.909330" elapsed="0.110302"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:09:09.023640" elapsed="2.326430"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:09.021655" elapsed="2.328415"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:00.508203" elapsed="10.842864"/>
+</test>
+<test id="s1-s2-s1-t2" name="Cenário: Login com senha errada" line="17">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:11.353068" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:11.353068" elapsed="1.170365"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:09:12.523433" elapsed="1.992614"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:14.516047" elapsed="0.106685"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:11.353068" elapsed="3.269664"/>
+</kw>
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:19.885996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:09:19.885996" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:09:14.626730" elapsed="5.260268">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:19.886998" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:19.888002" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:19.888002" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:09:14.625729" elapsed="5.262273">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:09:14.624732" elapsed="5.263270"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:19.888002" elapsed="0.018997"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:14.624732" elapsed="5.283263"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:19.909020" elapsed="0.013228"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:19.923248" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:19.923248" elapsed="0.151736"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.074984" elapsed="0.020310"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:19.907995" elapsed="0.187299"/>
+</kw>
+<kw name="Quando informo email válido e senha incorreta" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.098305" elapsed="0.024387"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:20.123701" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.122692" elapsed="0.159827"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:20.283508" level="INFO">Typing text 'senhaerrada' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.282519" elapsed="0.107294"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_INVALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:09:20.097280" elapsed="0.292533"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.390810" elapsed="0.025351"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:20.417164" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.417164" elapsed="0.235662"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:20.390810" elapsed="0.262016"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:20.096282" elapsed="0.556544"/>
+</kw>
+<kw name="Então devo ver uma mensagem de erro de autenticação" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[contains(normalize-space(), 'Não foi possivel fazer o login')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:20.654819" elapsed="0.944621"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:20.653824" elapsed="0.946617"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:09:21.604456" elapsed="2.309826"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:21.603487" elapsed="2.310795"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:11.352065" elapsed="12.562217"/>
+</test>
+<test id="s1-s2-s1-t3" name="Cenário: Login com campos em branco" line="23">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:23.917416" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:23.916420" elapsed="1.176512"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:09:25.092932" elapsed="1.906737"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:26.999669" elapsed="0.454009"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:23.916420" elapsed="3.538254"/>
+</kw>
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:32.540262" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:09:32.540262" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:09:27.456672" elapsed="5.083590">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:32.540262" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:32.540262" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:32.540262" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:09:27.456672" elapsed="5.083590">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:09:27.456672" elapsed="5.083590"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:32.540262" elapsed="0.030701"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:27.455676" elapsed="5.116288"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:32.573820" elapsed="0.016005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:32.590821" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:32.589825" elapsed="0.148480"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:32.739304" elapsed="0.238777"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:32.572964" elapsed="0.405117"/>
+</kw>
+<kw name="Quando não preencho os campos e tento fazer login" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:32.991902" elapsed="0.023998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:33.015900" level="INFO">Typing text '' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.015900" elapsed="0.311718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:33.328621" level="INFO">Typing text '' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.328621" elapsed="0.141658"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-02-01T00:09:32.978081" elapsed="0.492198"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.471281" elapsed="0.031998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:33.503279" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.503279" elapsed="0.095422"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:33.470279" elapsed="0.128422"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:32.978081" elapsed="0.620620"/>
+</kw>
+<kw name="Então devo ver mensagem de email obrigatório" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:p.chakra-text.css-1a4fscf</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.600692" elapsed="0.029998"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:33.660691" level="INFO">Element 'css:p.chakra-text.css-1a4fscf' contains text 'Digite seu e-mail para continuar.'.</msg>
+<arg>css:p.chakra-text.css-1a4fscf</arg>
+<arg>Digite seu e-mail para continuar.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.630690" elapsed="0.030001"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:33.599688" elapsed="0.062011"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:09:33.662687" elapsed="2.370607"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:33.662687" elapsed="2.370607"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:23.916420" elapsed="12.116874"/>
+</test>
+<test id="s1-s2-s1-t4" name="Cenário: Login sem informar email" line="29">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:36.036296" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:36.036296" elapsed="1.147571"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:09:37.184868" elapsed="1.801015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:38.986886" elapsed="0.031996"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:36.035296" elapsed="2.983586"/>
+</kw>
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:44.118758" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:09:44.118758" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:09:39.020885" elapsed="5.098880">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:44.119765" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:44.120759" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:44.120759" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:09:39.020885" elapsed="5.100476">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:09:39.020885" elapsed="5.100476"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.121361" elapsed="0.022797"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:39.019899" elapsed="5.124259"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.147162" elapsed="0.016991"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:44.164153" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.164153" elapsed="0.189400"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.354553" elapsed="0.255375"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:44.146164" elapsed="0.463764"/>
+</kw>
+<kw name="Quando informo apenas a senha" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.612932" elapsed="0.022025"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:44.635927" level="INFO">Typing text '' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.635927" elapsed="0.151001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:44.786928" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.786928" elapsed="0.210129"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:09:44.611927" elapsed="0.385130"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:44.998055" elapsed="0.020998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:45.020052" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:45.020052" elapsed="0.087197"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:44.997057" elapsed="0.111196"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:44.610926" elapsed="0.497327"/>
+</kw>
+<kw name="Então devo ver mensagem de email obrigatório" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:p.chakra-text.css-1a4fscf</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:45.109251" elapsed="0.033997"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:45.172257" level="INFO">Element 'css:p.chakra-text.css-1a4fscf' contains text 'Digite seu e-mail para continuar.'.</msg>
+<arg>css:p.chakra-text.css-1a4fscf</arg>
+<arg>Digite seu e-mail para continuar.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-01T00:09:45.143248" elapsed="0.029009"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:45.109251" elapsed="0.064008"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:09:45.175264" elapsed="2.350739"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:45.174262" elapsed="2.351741"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:36.035296" elapsed="11.490707"/>
+</test>
+<test id="s1-s2-s1-t5" name="Cenário: Login sem informar senha" line="35">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:47.529008" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:47.529008" elapsed="0.938429"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:09:48.467437" elapsed="1.768665"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:50.237101" elapsed="0.029997"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:47.528007" elapsed="2.739091"/>
+</kw>
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:55.417869" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:09:55.417869" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:09:50.269101" elapsed="5.149775">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:55.418876" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:55.418876" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:09:55.419875" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:09:50.269101" elapsed="5.150774">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:09:50.268101" elapsed="5.151774"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.419875" elapsed="0.021996"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:50.268101" elapsed="5.173770"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.442871" elapsed="0.015003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:55.457874" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.457874" elapsed="0.153345"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.611219" elapsed="0.027003"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:55.442871" elapsed="0.195351"/>
+</kw>
+<kw name="Quando informo apenas o email" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.640229" elapsed="0.021993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:55.662222" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.662222" elapsed="0.192090"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:55.856320" level="INFO">Typing text '' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:55.855312" elapsed="0.183996"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-02-01T00:09:55.639223" elapsed="0.401086"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:56.041309" elapsed="0.029998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:56.071307" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:09:56.071307" elapsed="0.106878"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:56.040309" elapsed="0.138869"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:55.639223" elapsed="0.539955"/>
+</kw>
+<kw name="Então devo ver mensagem de senha obrigatória" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:p.chakra-text.css-18uulcg</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:09:56.180175" elapsed="0.024999"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:56.233177" level="INFO">Element 'css:p.chakra-text.css-18uulcg' contains text 'Digite sua senha para continuar.'.</msg>
+<arg>css:p.chakra-text.css-18uulcg</arg>
+<arg>Digite sua senha para continuar.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-01T00:09:56.205174" elapsed="0.028003"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:56.180175" elapsed="0.053998"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:09:56.235175" elapsed="2.275880"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:56.234173" elapsed="2.276882"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:47.528007" elapsed="10.983048"/>
+</test>
+<test id="s1-s2-s1-t6" name="Cenário: Login com email inválido" line="41">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:09:58.514055" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:09:58.513056" elapsed="2.773069"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:10:01.286125" elapsed="0.038004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:01.325132" elapsed="0.040007"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:58.513056" elapsed="2.852083"/>
+</kw>
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:06.601011" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:10:06.601991" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:10:01.368123" elapsed="5.233868">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:06.602994" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:06.602994" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:06.602994" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:01.368123" elapsed="5.234871">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:10:01.367124" elapsed="5.235870"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:06.603991" elapsed="0.022002"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:01.367124" elapsed="5.258869"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:06.626995" elapsed="0.018999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:06.645994" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:06.645994" elapsed="0.175999"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:06.821993" elapsed="0.256732"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:06.626995" elapsed="0.451730"/>
+</kw>
+<kw name="Quando informo email inválido e senha válida" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.080723" elapsed="0.020004"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:07.100727" level="INFO">Typing text 'fake@mail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.100727" elapsed="0.154063"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:07.254790" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.254790" elapsed="0.115154"/>
+</kw>
+<arg>${EMAIL_INVALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:10:07.079730" elapsed="0.290214"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.370947" elapsed="0.023995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:07.395942" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.395942" elapsed="0.152653"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:07.369944" elapsed="0.178651"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:07.079730" elapsed="0.468865"/>
+</kw>
+<kw name="Então devo ver uma mensagem de erro de autenticação" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[contains(normalize-space(), 'Não foi possivel fazer o login')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:07.550595" elapsed="0.779855"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:07.549589" elapsed="0.780861"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:10:08.331449" elapsed="2.260642"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:08.331449" elapsed="2.260642"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:09:58.512058" elapsed="12.080033"/>
+</test>
+<status status="PASS" start="2026-02-01T00:09:00.498217" elapsed="70.095878"/>
+</suite>
+<status status="PASS" start="2026-02-01T00:09:00.494204" elapsed="70.101889"/>
+</suite>
+<suite id="s1-s3" name="Logout" source="C:\Users\Juliano\www\kasa-qa\tests\logout">
+<suite id="s1-s3-s1" name="Logout Tests" source="C:\Users\Juliano\www\kasa-qa\tests\logout\logout_tests.robot">
+<test id="s1-s3-s1-t1" name="Cenário: Logoff com sucesso" line="10">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:10.611094" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:10:10.611094" elapsed="3.245332"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:10:13.856426" elapsed="0.027001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:13.883427" elapsed="0.100000"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:10.611094" elapsed="3.373335"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:13.986425" elapsed="0.165065"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:14.153495" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:14.153495" elapsed="0.639114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:14.792609" elapsed="0.051998"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:13.985436" elapsed="0.859171"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:14.846606" elapsed="0.028004"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:14.875611" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:14.874610" elapsed="0.239753"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:15.116365" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:15.115362" elapsed="0.159115"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:10:14.846606" elapsed="0.427871"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:15.275476" elapsed="0.022998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:15.300503" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:15.299492" elapsed="0.162985"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:15.274477" elapsed="0.189000"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:14.845606" elapsed="0.617871"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:15.465482" elapsed="2.325103"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:15.465482" elapsed="2.325103"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:15.464476" elapsed="2.326109"/>
+</kw>
+<kw name="Quando faço logoff" owner="login_keywords">
+<kw name="Abrir Menu Perfil" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:17.791584" elapsed="0.024006"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:17.816587" level="INFO">Clicking element 'css:button[title='Geromel']'.</msg>
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:17.816587" elapsed="0.153001"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:17.791584" elapsed="0.178004"/>
+</kw>
+<kw name="Clicar Em Sair" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:17.970585" elapsed="0.091002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:18.061587" level="INFO">Clicking element 'css:button.chakra-button.css-8vvqyi'.</msg>
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:18.061587" elapsed="0.105016"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:17.969588" elapsed="0.198016"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:17.790585" elapsed="0.377019"/>
+</kw>
+<kw name="Então devo ver a opção de entrar novamente" owner="login_keywords">
+<kw name="Devo Estar Deslogado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:18.169603" elapsed="0.227001"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:18.169603" elapsed="0.227001"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:18.168600" elapsed="0.228004"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:10:18.398604" elapsed="2.230283"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:18.397603" elapsed="2.231284"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:10.609095" elapsed="10.019792"/>
+</test>
+<status status="PASS" start="2026-02-01T00:10:10.601096" elapsed="10.029793"/>
+</suite>
+<status status="PASS" start="2026-02-01T00:10:10.598092" elapsed="10.034800"/>
+</suite>
+<suite id="s1-s4" name="Search" source="C:\Users\Juliano\www\kasa-qa\tests\search">
+<suite id="s1-s4-s1" name="Search Tests" source="C:\Users\Juliano\www\kasa-qa\tests\search\search_tests.robot">
+<test id="s1-s4-s1-t1" name="Cenário: Buscar partida filtrando por time" line="12">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:20.651896" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:10:20.651896" elapsed="4.028699"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:10:24.680595" elapsed="0.040255"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:24.720850" elapsed="0.028078"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:20.650899" elapsed="4.098029"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:30.053007" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:10:30.053007" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:10:24.753931" elapsed="5.300077">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:30.055007" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:30.055007" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:30.055007" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:24.752933" elapsed="5.303073">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:10:24.752933" elapsed="5.303073"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.056006" elapsed="0.030281"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:24.751947" elapsed="5.334340"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.087288" elapsed="0.020179"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:30.107467" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.107467" elapsed="0.222562"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.330029" elapsed="0.039210"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:30.087288" elapsed="0.282952"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.373248" elapsed="0.040139"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:30.414693" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.414445" elapsed="0.252132"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:30.668584" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.667582" elapsed="0.250458"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:10:30.372262" elapsed="0.545778"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.919037" elapsed="0.034313"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:30.954350" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:30.954350" elapsed="0.301434"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:30.918040" elapsed="0.337744"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:30.370240" elapsed="0.885544"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:31.257788" elapsed="2.523457"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:31.256786" elapsed="2.525456"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:31.255784" elapsed="2.526458"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:24.750930" elapsed="9.031312"/>
+</kw>
+<kw name="Selecionar Um Time" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:33.785240" level="INFO">Clicking element 'css:#filter-team'.</msg>
+<arg>${INPUT_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:33.785240" elapsed="0.373520"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class,'css-1lo6ld2')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-01T00:10:34.158760" elapsed="0.025282"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:34.184042" level="INFO">Clicking element 'xpath=(//div[contains(@class,'css-1lo6ld2')]//div)[1]'.</msg>
+<arg>xpath=(//div[contains(@class,'css-1lo6ld2')]//div)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:34.184042" elapsed="0.128546"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:33.784240" elapsed="0.528348"/>
+</kw>
+<kw name="Clicar Em Buscar" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:34.325171" level="INFO">Clicking element 'css:.css-n0tora'.</msg>
+<arg>${BOTAO_BUSCAR_AREA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:34.323598" elapsed="0.255650"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:34.322592" elapsed="0.256656"/>
+</kw>
+<kw name="Validar Mensagem Sem Resultados" owner="search_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:39.717205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:10:39.717205" level="FAIL">Element 'css:p.chakra-text.css-ks5w62' not visible after 5 seconds.</msg>
+<arg>${MSG_SEM_RESULTADOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:10:34.582249" elapsed="5.135955">Element 'css:p.chakra-text.css-ks5w62' not visible after 5 seconds.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${MSG_SEM_RESULTADOS}</arg>
+<arg>Sem resultados</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:39.719204" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:34.581254" elapsed="5.137950">Element 'css:p.chakra-text.css-ks5w62' not visible after 5 seconds.</status>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:10:39.721204" elapsed="2.331885"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:39.721204" elapsed="2.331885"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:20.648930" elapsed="21.405160">Element 'css:p.chakra-text.css-ks5w62' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s4-s1-t2" name="Cenário: Buscar partida filtrando por campeonato" line="18">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:42.058091" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:10:42.058091" elapsed="2.981980"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:10:45.041071" elapsed="0.033003"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:45.074074" elapsed="0.071005"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:42.057091" elapsed="3.088981"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:50.339046" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:10:50.339046" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:10:45.149073" elapsed="5.189973">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:50.340047" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:50.340047" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:10:50.340047" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:45.148074" elapsed="5.191973">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:10:45.148074" elapsed="5.191973"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.340047" elapsed="0.018450"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:45.148074" elapsed="5.211427"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.359501" elapsed="0.015000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:50.374501" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.374501" elapsed="0.142208"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.516709" elapsed="0.027244"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:50.359501" elapsed="0.185457"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.545966" elapsed="0.027983"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:50.574951" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.573949" elapsed="0.155167"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:50.730114" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.729116" elapsed="0.104502"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:10:50.545966" elapsed="0.288655"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.834621" elapsed="0.022999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:50.857620" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:50.857620" elapsed="0.181245"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:50.834621" elapsed="0.205239"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:50.544958" elapsed="0.494902"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:51.042025" elapsed="2.167119"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:51.042025" elapsed="2.167119"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:51.040860" elapsed="2.169283"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:45.147074" elapsed="8.063069"/>
+</kw>
+<kw name="Selecionar Um Campeonato" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:53.212141" level="INFO">Clicking element 'css:#filter-championship'.</msg>
+<arg>${INPUT_CAMPEONATO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:10:53.211142" elapsed="0.170311"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LISTA_OPCOES}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:53.381453" elapsed="0.094494"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:53.476949" level="INFO">Clicking element 'xpath:(//div[contains(@class,'css-kmj3am')])[1]'.</msg>
+<msg time="2026-02-01T00:10:53.668312" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:10:53.668312" level="FAIL">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</msg>
+<arg>${PRIMEIRO_ITEM_LISTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-01T00:10:53.476949" elapsed="0.194363">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:53.211142" elapsed="0.460170">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<kw name="Clicar Em Buscar" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:10:53.672312" elapsed="0.000000"/>
+</kw>
+<kw name="Validar Mensagem Sem Resultados" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:10:53.672312" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:10:53.673311" elapsed="2.254114"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:53.673311" elapsed="2.254114"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:42.056090" elapsed="13.871335">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</test>
+<test id="s1-s4-s1-t3" name="Cenário: Buscar partida filtrando por canal" line="24">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:10:55.930581" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:10:55.930581" elapsed="1.078250"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:10:57.009831" elapsed="2.268249"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:10:59.278080" elapsed="0.040970"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:55.930581" elapsed="3.388469"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:04.518288" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-42.png"&gt;&lt;img src="selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:11:04.518288" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:10:59.324046" elapsed="5.195262">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:04.521289" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:04.521289" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:04.521289" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:59.324046" elapsed="5.198241">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:10:59.321050" elapsed="5.201237"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.522287" elapsed="0.022001"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:59.321050" elapsed="5.223238"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.545291" elapsed="0.015999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:04.561290" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.561290" elapsed="0.153644"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.715934" elapsed="0.246427"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:04.544288" elapsed="0.418073"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.963360" elapsed="0.017271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:04.981637" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:04.981637" elapsed="0.197993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:05.179630" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:05.179630" elapsed="0.145215"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:11:04.962361" elapsed="0.363483"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:05.326843" elapsed="0.024995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:05.352838" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:05.351838" elapsed="0.231054"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:05.325844" elapsed="0.258053"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:04.962361" elapsed="0.621536"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:05.585894" elapsed="2.185044"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:05.584891" elapsed="2.187047"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:05.583897" elapsed="2.188041"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:10:59.320049" elapsed="8.451889"/>
+</kw>
+<kw name="Selecionar Um Canal" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:07.773937" level="INFO">Clicking element 'css:#filter-streaming'.</msg>
+<arg>${INPUT_STREAMING}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:07.773937" elapsed="0.200999"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LISTA_OPCOES}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:07.975914" elapsed="0.118899"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:08.095876" level="INFO">Clicking element 'xpath:(//div[contains(@class,'css-kmj3am')])[1]'.</msg>
+<msg time="2026-02-01T00:11:08.329710" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:11:08.329710" level="FAIL">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</msg>
+<arg>${PRIMEIRO_ITEM_LISTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-01T00:11:08.095344" elapsed="0.236365">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-01T00:11:07.772937" elapsed="0.558772">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<kw name="Clicar Em Buscar" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:11:08.332709" elapsed="0.000000"/>
+</kw>
+<kw name="Validar Mensagem Sem Resultados" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:11:08.333708" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:11:08.334709" elapsed="2.341990"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:08.333708" elapsed="2.342991"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:10:55.929580" elapsed="14.748153">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</test>
+<test id="s1-s4-s1-t4" name="Cenário: Buscar partida com todos os filtros" line="30">
+<kw name="Abrir Site" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:10.680897" level="INFO">Opening browser 'chrome' to base url 'https://www.kasa.live/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T00:11:10.680897" elapsed="2.916407"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>800</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-02-01T00:11:13.597304" elapsed="0.066204"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:img[alt='home']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:13.663508" elapsed="0.117499"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:10.679899" elapsed="3.101108"/>
+</kw>
+<kw name="Dado que estou autenticado" owner="common_keywords">
+<kw name="Garantir Que Estou Deslogado" owner="login_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Tentar Fazer Logoff Se Estiver Logado" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:18.999687" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:11:18.999687" level="FAIL">Element 'css:button[title='Geromel']' not visible after 5 seconds.</msg>
+<arg>css:button[title='Geromel']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-01T00:11:13.783002" elapsed="5.216685">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[title='Geromel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:19.000692" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:19.000692" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-8vvqyi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T00:11:19.000692" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:11:13.783002" elapsed="5.217690">Element 'css:button[title='Geromel']' not visible after 5 seconds.</status>
+</kw>
+<arg>Tentar Fazer Logoff Se Estiver Logado</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-01T00:11:13.783002" elapsed="5.217690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.000692" elapsed="0.017996"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:13.782004" elapsed="5.236684"/>
+</kw>
+<kw name="Abrir Modal De Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.018688" elapsed="0.012003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:19.030691" level="INFO">Clicking element 'css:button.chakra-button.css-ovdjqs'.</msg>
+<arg>css:button.chakra-button.css-ovdjqs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.030691" elapsed="0.117669"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.148360" elapsed="0.244052"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:19.018688" elapsed="0.373724"/>
+</kw>
+<kw name="Quando informo email e senha corretos" owner="login_keywords">
+<kw name="Preencher Formulário Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input#email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.393410" elapsed="0.024020"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:19.418447" level="INFO">Typing text 'prof.julianoklak@gmail.com' into text field 'css:input#email'.</msg>
+<arg>css:input#email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.418447" elapsed="0.156346"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:19.575791" level="INFO">Typing text 'printf0157808' into text field 'css:input#password'.</msg>
+<arg>css:input#password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.575791" elapsed="0.141479"/>
+</kw>
+<arg>${EMAIL_VALIDO}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<status status="PASS" start="2026-02-01T00:11:19.393410" elapsed="0.323860"/>
+</kw>
+<kw name="Submit Login" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.718273" elapsed="0.020995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:19.740271" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>css:button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.739268" elapsed="0.164163"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:19.717270" elapsed="0.186161"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:19.393410" elapsed="0.510021"/>
+</kw>
+<kw name="Então posso acessar funcionalidades autenticadas" owner="login_keywords">
+<kw name="Favoritos" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[title='Favoritos'] p</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:19.905443" elapsed="2.124451"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:19.904430" elapsed="2.125464"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:19.904430" elapsed="2.125464"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:13.782004" elapsed="8.247890"/>
+</kw>
+<kw name="Selecionar Um Time" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:22.030896" level="INFO">Clicking element 'css:#filter-team'.</msg>
+<arg>${INPUT_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.030896" elapsed="0.154596"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class,'css-1lo6ld2')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.185762" elapsed="0.017393"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:22.204155" level="INFO">Clicking element 'xpath=(//div[contains(@class,'css-1lo6ld2')]//div)[1]'.</msg>
+<arg>xpath=(//div[contains(@class,'css-1lo6ld2')]//div)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.203155" elapsed="0.143919"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:22.029894" elapsed="0.318178"/>
+</kw>
+<kw name="Selecionar Um Campeonato" owner="search_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:22.349275" level="INFO">Clicking element 'css:#filter-championship'.</msg>
+<arg>${INPUT_CAMPEONATO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.349073" elapsed="0.123066"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LISTA_OPCOES}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.472139" elapsed="0.025869"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T00:11:22.498008" level="INFO">Clicking element 'xpath:(//div[contains(@class,'css-kmj3am')])[1]'.</msg>
+<msg time="2026-02-01T00:11:22.657546" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T00:11:22.657546" level="FAIL">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</msg>
+<arg>${PRIMEIRO_ITEM_LISTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-01T00:11:22.498008" elapsed="0.161541">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-01T00:11:22.348072" elapsed="0.311477">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</kw>
+<kw name="Selecionar Um Canal" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:11:22.661548" elapsed="0.000000"/>
+</kw>
+<kw name="Clicar Em Buscar" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:11:22.661548" elapsed="0.000000"/>
+</kw>
+<kw name="Validar Mensagem Sem Resultados" owner="search_keywords">
+<status status="NOT RUN" start="2026-02-01T00:11:22.662549" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar Navegador" owner="setup" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-01T00:11:22.664549" elapsed="2.250456"/>
+</kw>
+<status status="PASS" start="2026-02-01T00:11:22.663552" elapsed="2.251453"/>
+</kw>
+<status status="FAIL" start="2026-02-01T00:11:10.678898" elapsed="14.236107">Element with locator 'xpath:(//div[contains(@class,'css-kmj3am')])[1]' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-01T00:10:20.635888" elapsed="64.282234"/>
+</suite>
+<status status="FAIL" start="2026-02-01T00:10:20.633891" elapsed="64.286234"/>
+</suite>
+<status status="FAIL" start="2026-02-01T00:06:47.347315" elapsed="277.573947"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="8" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="Favorites">Tests.Favorites</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1-s1" name="Favoritos Tests">Tests.Favorites.Favoritos Tests</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s2" name="Login">Tests.Login</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s2-s1" name="Login Tests">Tests.Login.Login Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Logout">Tests.Logout</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3-s1" name="Logout Tests">Tests.Logout.Logout Tests</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s4" name="Search">Tests.Search</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s4-s1" name="Search Tests">Tests.Search.Search Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
