@@ -3,10 +3,10 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}              https://www.kasa.live/
-${EMAIL_VALIDO}     prof.julianoklak@gmail.com
-${SENHA_VALIDA}     printf0157808
+${EMAIL_VALIDO}     e_mail_valido@gmail.com
+${SENHA_VALIDA}     senha_valida
 ${EMAIL_INVALIDO}   fake@mail.com
-${SENHA_INVALIDA}   senhaerrada
+${SENHA_INVALIDA}   senha_errada
 
 *** Keywords ***
 Garantir Que Estou Deslogado
